@@ -2,7 +2,6 @@
 
 set :application, 'myapp'
 set :repo_url, 'git@github.com:abhilashkkumar/myapp.git'
-set :default_shell, "/bin/bash -l"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -28,7 +27,7 @@ set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default value for default_env is {}
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
+set :default_env, { path: "/home/ubuntu/.rvm/gems/ruby-2.2.1" }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
