@@ -50,10 +50,10 @@
 # The server-based syntax can be used to override options:
 # ------------------------------------
 server '54.200.232.18',
-  user: 'deploy',
+  user: 'ubuntu',
   roles: %w{web app db},
   ssh_options: {
-    user: 'deploy', # overrides user setting above
+    user: 'ubuntu', # overrides user setting above
     keys: %w(/home/abhilash/test.pem),
     forward_agent: false,
     auth_methods: %w(publickey password)
