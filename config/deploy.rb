@@ -2,7 +2,7 @@
 
 set :application, 'myapp'
 set :repo_url, 'git@github.com:abhilashkkumar/myapp.git'
-
+set :default_shell, "/bin/bash -l"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
