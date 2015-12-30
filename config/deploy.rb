@@ -31,6 +31,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 #set :rvm_bin_path, "$HOME/bin"
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+set :rvm_bin_path, "/usr/share/rvm/bin"
 
 set :rvm_ruby_version, '2.2.1'
 
